@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Files and libraries
+For this project, the following libraries has been used:
+- semantic-ui-react ([JS components already styled](https://react.semantic-ui.com/))
+- kanbasu ([CSS Framework](https://kanbasu.liip.ch/))
+- [react-table](https://react-table-omega.vercel.app/)
+- date-fns ([Date formater](https://date-fns.org/v2.15.0/docs/format))
+
+Main files are in the `src` folder
+
 ## Available Scripts
 
 In the project directory, you can run:
