@@ -6,8 +6,8 @@ const Row = ({ rows, prepareRow }) => rows.map((row, i) => {
   prepareRow(row)
   return (
     <SemanticTable.Row
-      positive={row.values.bid > row.values.open}
-      negative={row.values.bid < row.values.open}
+      positive={row.values.bid > row.values.close}
+      negative={row.values.bid < row.values.close}
       {...row.getRowProps()}>
       <Cells cells={row.cells} />
     </SemanticTable.Row>
