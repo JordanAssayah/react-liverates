@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { useTable } from 'react-table';
-import { Table as SemanticTable, Message } from 'semantic-ui-react';
+import { Table as SemanticTable } from 'semantic-ui-react';
 import Rows from './Rows';
 
 export default function Table({ data }) {
@@ -29,18 +29,8 @@ export default function Table({ data }) {
     data: memoizedData,
   })
 
-  // We handle API error (3 request per hour)
-  if (data[0] !== undefined && data[0].error) {
-    return (
-      <Message negative>
-        <Message.Header>Oh No!</Message.Header>
-        <p>{ data[0].error }</p>
-      </Message>
-    )
-  }
-
   return (
-    <SemanticTable {...getTableProps()}>
+    <SemanticTable {...getTableProps()} className='mrgb++'>
       <SemanticTable.Header>
         {headerGroups.map(headerGroup => (
           <SemanticTable.Row {...headerGroup.getHeaderGroupProps()}>
