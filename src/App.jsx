@@ -11,14 +11,14 @@ class App extends React.Component {
     }
   }
 
+  // Will fetch the forex data every second
   _getForexData = async () => {
     const response = await fetch('https://www.live-rates.com/rates')
     const  rates = await response.json()
     this.setState({ data: rates })
     setTimeout(() => {
-      console.log('hello')
       this._getForexData()
-    }, 15000)
+    }, 1000)
   }
 
   componentDidMount() {
