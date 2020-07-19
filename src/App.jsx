@@ -32,7 +32,7 @@ class App extends React.Component {
         <Message>
           <Message.Header>Note</Message.Header>
           <p>
-            The rates are updated every seconds using the response of the following API endpoint: <a href='https://www.live-rates.com/rates' target="_blank" rel="noopener noreferrer">https://www.live-rates.com/rates</a>
+            The rates are updated every second using the response of the following API endpoint: <a href='https://www.live-rates.com/rates' target="_blank" rel="noopener noreferrer">https://www.live-rates.com/rates</a>
           </p>
         </Message>
         <Table data={this.state.data} />
